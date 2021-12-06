@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-from models.lenet import LeNet
+from models.net import Net
 import torch.onnx
 import os
 
@@ -14,7 +14,7 @@ def parse_args():
 def main():
     args = parse_args()
     dummy_input = torch.randn(1, 1, 28, 28)
-    model = LeNet()
+    model = Net()
 
     print("Loading state dict to cpu")
     model.load_state_dict(torch.load(args.input, map_location=torch.device('cpu')))

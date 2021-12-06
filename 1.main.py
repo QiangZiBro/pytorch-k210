@@ -4,7 +4,7 @@ import torch
 import torch.nn.functional as F
 import torch.optim as optim
 from torch.optim.lr_scheduler import StepLR
-from models.lenet import LeNet
+from models.net import Net
 from PIL import Image
 from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
@@ -126,7 +126,7 @@ def main():
     ACCESS_KEY = 'Accesskey-4669e1203a6fa8291d5d7744ba313f91'
     train_loader, test_loader = create_loader(ACCESS_KEY)
 
-    model = LeNet().to(device)
+    model = Net().to(device)
     optimizer = optim.Adadelta(model.parameters(), lr=args.lr)
     scheduler = StepLR(optimizer, step_size=1, gamma=args.gamma)
     for epoch in range(1, args.epochs + 1):

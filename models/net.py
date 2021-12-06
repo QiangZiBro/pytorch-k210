@@ -11,7 +11,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 
-class LeNet(nn.Module):
+class Net(nn.Module):
     def __init__(self):
         super().__init__()
         self.conv1 = nn.Conv2d(1, 6, 5)
@@ -24,7 +24,7 @@ class LeNet(nn.Module):
         self.conv3 = nn.Conv2d(16, 32, 4)
         self.relu3 = nn.ReLU()
 
-        self.conv4 = nn.Conv2d(32, 64, 1)
+        self.conv4 = nn.Conv2d(64, 32, 1)
         self.relu4 = nn.ReLU()
 
         self.conv5 = nn.Conv2d(64, 32, 1)
@@ -55,6 +55,6 @@ class LeNet(nn.Module):
 
 
 if __name__ == '__main__':
-    model = LeNet()
+    model = Net()
     x = torch.rand(4, 1, 28, 28)
     print(model(x).shape)
