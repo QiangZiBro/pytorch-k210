@@ -11,6 +11,11 @@ from torchvision import transforms
 
 from tensorbay import GAS
 from tensorbay.dataset import Dataset as TensorBayDataset
+from tensorbay.client import config
+
+# Enlarge timeout and max_retries of configuration.
+config.timeout = 40
+config.max_retries = 4
 
 
 class MNISTSegment(Dataset):
@@ -123,7 +128,7 @@ def main():
         train_kwargs.update(cuda_kwargs)
         test_kwargs.update(cuda_kwargs)
 
-    ACCESS_KEY = 'Accesskey-4669e1203a6fa8291d5d7744ba313f91'
+    ACCESS_KEY = 'ACCESSKEY-3fd9197d2bf151d297f110ba19faafe8'
     train_loader, test_loader = create_loader(ACCESS_KEY)
 
     model = Net().to(device)

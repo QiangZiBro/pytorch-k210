@@ -15,7 +15,6 @@ while True:
     lcd.display(img, oft=(0, 0))  # display large picture
     img1 = img.to_grayscale(1)  # convert to gray
     img2 = img1.resize(32, 32)  # resize to mnist input 32x32
-    # a=img2.invert()					#invert picture as mnist need
     a = img2.strech_char(1)  # preprocessing pictures, eliminate dark corner
     lcd.display(img2, oft=(240, 32))  # display small 32x32 picture
     a = img2.pix_to_ai();  # generate data for ai

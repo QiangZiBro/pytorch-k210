@@ -24,7 +24,7 @@ class Net(nn.Module):
         self.conv3 = nn.Conv2d(16, 32, 4)
         self.relu3 = nn.ReLU()
 
-        self.conv4 = nn.Conv2d(64, 32, 1)
+        self.conv4 = nn.Conv2d(32, 64, 1)
         self.relu4 = nn.ReLU()
 
         self.conv5 = nn.Conv2d(64, 32, 1)
