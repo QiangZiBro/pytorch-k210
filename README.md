@@ -32,8 +32,10 @@ This project is still building and improving, hoping to help more starters with 
 
 ## Thanks❤️
 
-- **Gravati Open Dataset** https://gas.graviti.com/dataset/qiangzibro/MNIST
+- **Gravati Open Dataset**
+  - Website https://gas.graviti.com/
+  - MNIST Dataset https://gas.graviti.com/dataset/qiangzibro/MNIST
 
 - **Datawhale** 
   - Wechat official account: Datawhale
-  - Github:https://github.com/Datawhalechina
+  - Github https://github.com/Datawhalechina
