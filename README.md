@@ -30,4 +30,4 @@ You can find the tutorial [here](http://qiangzibro.com/2021/12/01/cvaio/) (ç®€ä½
 
 ## Useful links
 
-- Gravati Open Dataset https://gas.graviti.cn/dataset/qiangzibro/MNIST
+- Gravati Open Dataset https://gas.graviti.com/dataset/qiangzibro/MNIST
