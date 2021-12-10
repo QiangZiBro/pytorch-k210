@@ -22,7 +22,7 @@ You can find the tutorial [here](http://qiangzibro.com/2021/12/01/cvaio/) (简�
 
 ## Goals🛠
 
-This project is still building and enhancing, hoping to help more starters with deploying DL models on K210.
+This project is still building and improving, hoping to help more starters with deploying DL models on K210.
 
 - [ ] Use Micropython to load KModel
 - [ ] Use C SDK to load the KModel
