@@ -17,6 +17,7 @@ class Net(nn.Module):
         self.conv1 = nn.Conv2d(1, 6, 5)
         self.relu1 = nn.ReLU()
         self.pool1 = nn.MaxPool2d(2)
+
         self.conv2 = nn.Conv2d(6, 16, 5)
         self.relu2 = nn.ReLU()
         self.pool2 = nn.MaxPool2d(2)
@@ -43,11 +44,11 @@ class Net(nn.Module):
         y = self.conv3(y)
         y = self.relu3(y)
         y = self.conv4(y)
-        y = self.relu5(y)
+        y = self.relu4(y)
         y = self.conv5(y)
         y = self.relu6(y)
         y = self.conv6(y)
-        y = self.relu4(y)
+        y = self.relu6(y)
 
         y = y.view(y.shape[0], -1)
 
