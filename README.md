@@ -1,12 +1,12 @@
 # Pytorch K210
 
-## TL;DR
+## TL;DR🚀
 
 This repo intends to introduce a complete routine for deploying deep learning models to k210 board, using the MNIST digit recognition as an example.
 
 
 
-## Pipeline
+## Pipeline🧐
 
 ```
 Pytorch --> ONNX --> NNCASE --> KModel --> K210 SDK / MicroPython
@@ -14,13 +14,15 @@ Pytorch --> ONNX --> NNCASE --> KModel --> K210 SDK / MicroPython
 
 
 
-## Tutorials
+## Tutorials📖
 
 You can find the tutorial [here](http://qiangzibro.com/2021/12/01/cvaio/) (简体中文), bon appetite!
 
 
 
-## Goals
+## Goals🛠
+
+This project is still building and enhancing, hoping to help more starters with deploying DL models on K210.
 
 - [ ] Use Micropython to load KModel
 - [ ] Use C SDK to load the KModel
@@ -28,6 +30,10 @@ You can find the tutorial [here](http://qiangzibro.com/2021/12/01/cvaio/) (简�
 
 
 
-## Useful links
+## Thanks❤️
 
-- Gravati Open Dataset https://gas.graviti.com/dataset/qiangzibro/MNIST
+- **Gravati Open Dataset** https://gas.graviti.com/dataset/qiangzibro/MNIST
+
+- **Datawhale** 
+  - Wechat official account: Datawhale
+  - Github:https://github.com/Datawhalechina
