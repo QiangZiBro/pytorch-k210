@@ -141,3 +141,4 @@ outputs/*
 data
 tmp
 .idea
+.DS_Store
